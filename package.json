@@ -1,0 +1,12 @@
+{
+  "name": "truncgil-finance",
+  "version": "5.0.0",
+  "main": "src/TruncgilFinance.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/truncgil/react-js-truncgil-finance.git"
+  },
+  "keywords": ["react", "finance", "api"],
+  "author": "Truncgil Technology",
+  "license": "MIT"
+}
