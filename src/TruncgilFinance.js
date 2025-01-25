@@ -24,4 +24,4 @@ const TruncgilFinance = () => {
     return { getCurrencyData };
 };
 
-export default TruncgilFinance; 
+export default TruncgilFinance;
