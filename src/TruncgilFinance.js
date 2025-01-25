@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const TruncgilFinance = () => {
@@ -21,7 +21,19 @@ const TruncgilFinance = () => {
         return data ? data[currency] : null;
     };
 
-    return { getCurrencyData };
+    const getGold = () => {
+        return data ? Object.values(data).filter(item => item.Type === 'Gold') : [];
+    };
+
+    const getCryptoCurrency = () => {
+        return data ? Object.values(data).filter(item => item.Type === 'CryptoCurrency') : [];
+    };
+
+    const getCurrencies = () => {
+        return data ? Object.values(data).filter(item => item.Type === 'Currency') : [];
+    };
+
+    return { getCurrencyData, getGold, getCryptoCurrency, getCurrencies };
 };
 
 export default TruncgilFinance;
