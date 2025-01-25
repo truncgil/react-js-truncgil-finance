@@ -45,6 +45,29 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## TruncgilFinance Component
+
+The `TruncgilFinance` component fetches financial data from the Truncgil API and provides several methods to access different types of data.
+
+### Methods
+
+- **getCurrencyData(currency)**: Returns the data for a specific currency. If the data is not available, it returns `null`.
+
+- **getGold()**: Returns an array of gold data from the fetched rates.
+
+- **getCryptoCurrency()**: Returns an array of cryptocurrency data from the fetched rates.
+
+- **getCurrencies()**: Returns an array of currency data from the fetched rates.
+
+### Example Usage
+
+```javascript
+import TruncgilFinance from './src/TruncgilFinance';
+const finance = TruncgilFinance();
+const goldData = finance.getGold();
+console.log(goldData);
+```
+
 ### Code Splitting
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
