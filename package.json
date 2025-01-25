@@ -1,6 +1,6 @@
 {
   "name": "truncgil-finance",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "files": [
     "src/TruncgilFinance.js",
     "package.json"
