@@ -6,7 +6,7 @@ import TruncgilFinance from './TruncgilFinance';
 jest.mock('axios');
 
 describe('TruncgilFinance', () => {
-    it('API verilerini başarıyla çeker ve getCurrencyData fonksiyonu doğru çalışır', async () => {
+    it('Successfully fetches API data and the getCurrencyData function works correctly', async () => {
         const mockData = {
             Rates: {
                 USD: { rate: 1.0 },
